@@ -20,7 +20,7 @@ body {
   background: hsl(244, 38%, 16%);
   width: 70%;
   max-width: 957px;
-  min-width: 290px;
+  min-width: 320px;
   height: auto;
   margin: auto;
   display: grid;
@@ -61,6 +61,7 @@ body {
 .detail-header h1 {
   color: hsl(0, 0%, 100%);
   font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 5%;
   font-family: "Inter", sans-serif;
 }
@@ -94,35 +95,17 @@ body {
   color: hsla(0, 0%, 100%, 0.6);
   font-size: 0.8em;
 }
-
 @media screen and (max-width: 1150px) {
-  .detail-header h1 {
-    font-size: 1.7rem;
-  }
-  .detail-container p {
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .detail-header h1 {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 950px) {
-  .detail-header h1 {
-    font-size: 1.2rem;
+  .card {
+    width: 85%;
   }
 }
 @media screen and (max-width: 850px) {
-  .detail-footer {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (max-width: 500px) {
   body {
     height: auto;
   }
   .card {
+    width: 50%;
     grid-template-columns: auto;
     text-align: center;
     margin: 10px auto;
@@ -135,7 +118,13 @@ body {
     grid-area: right;
   }
   .detail-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+  .detail-container {
+    width: 100%;
+  }
+  .detail-container p {
+    font-size: 0.85rem;
   }
   .detail-footer {
     font-size: 1rem;
